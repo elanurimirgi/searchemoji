@@ -7,11 +7,11 @@ describe("emoji-list-render", () => {
   beforeEach(() => {
     render(<App />);
   });
-  test("Emoji list render", () => {
-    const emojieList = emojiList.slice(0, 19);
-    emojieList.map((item) => {
+  test("Emoji list  rendering", () => {
+    const emojilist = emojiList.slice(0, 19); 
+    emojilist.map((item) => {
       expect(screen.getByText(item.title)).toBeInTheDocument();
     });
   });
 });
-
+// emojiList.json dosyasının render edilip ekranda gözüküp gözükmediğini kontrol eden test
