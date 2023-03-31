@@ -15,4 +15,5 @@ describe("click to copy Emoji",() =>{
       userEvent.click(copytitle)
       expect(copytitle.parentElement.getAttribute("data-clipboard-text")).toEqual("💯")
   })
-})
+}) 
+// Emojinin gerçekten kopyalanıp kopyalanmadığını kontrol eden test
