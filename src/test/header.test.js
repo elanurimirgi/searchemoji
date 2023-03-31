@@ -10,7 +10,8 @@ describe("header-render",()=>{
         render(<Header/>)
         headerRender =screen.getByText("Emoji Search")
     })
-    test('Header kısmının ekranda gözükmesi gerek', () => {
+    test('Header in screen', () => {
         expect(headerRender).toBeInTheDocument()
     });
 })
+//Header kısmının ekranda gözüküp gözükmediğini kontrol eden test
