@@ -4,15 +4,16 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
 
-describe("Search Emoji", () => {
+describe("Searching Emoji", () => {
   let inputemoji;
   beforeEach(() => {
     render(<App />);
     inputemoji = screen.getByLabelText("inputTest");
   });
-  test("render after filter", () => {
+  test("emoji filter", () => {
     const value = "Grinning";
     userEvent.type(inputemoji, value);
     expect(screen.getByText(value)).toBeInTheDocument();
   });
 });
+// input alanında aranan isimle ilgili eşleşen emojiyi test eden kod
